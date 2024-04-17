@@ -27,6 +27,7 @@ class _HomeBottomNavigationScreenState extends State<HomeBottomNavigationScreen>
   Widget build(BuildContext context) {
     final labelTextStyle = Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 8.0);
     return Scaffold(
+      extendBody: true,
       body: _children[selectedIndex],
       bottomNavigationBar: SizedBox(
         height: 50.0,

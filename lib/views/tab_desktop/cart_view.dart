@@ -36,7 +36,7 @@ class _UserHeader extends StatelessWidget {
       flex: 1,
       child: Container(
         alignment: Alignment.centerRight,
-        padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
+        padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 5.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -61,7 +61,7 @@ class _UserHeader extends StatelessWidget {
                   UIHelper.horizontalSpaceMedium(),
                   ClipOval(
                     child: Image.asset(
-                      'assets/images/user.jpg',
+                      'assets/images/avartar.jpg',
                       height: 50.0,
                       width: 50.0,
                       fit: BoxFit.fill,
@@ -73,8 +73,11 @@ class _UserHeader extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Vinoth',
-                        style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 17.0, fontWeight: FontWeight.bold),
+                        'ChungThanhDe',
+                        style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                              fontSize: 15.0,
+                              fontWeight: FontWeight.bold,
+                            ),
                       ),
                       UIHelper.verticalSpaceExtraSmall(),
                       Text(

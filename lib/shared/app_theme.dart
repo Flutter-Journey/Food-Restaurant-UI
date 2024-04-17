@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:swiggy_ui/utils/app_colors.dart';
 
 ThemeData appPrimaryTheme() => ThemeData(
+      fontFamily: 'Poppins',
       brightness: Brightness.light,
       primaryColor: Colors.white,
       scaffoldBackgroundColor: Colors.white,

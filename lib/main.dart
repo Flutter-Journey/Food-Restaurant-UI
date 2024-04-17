@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:swiggy_ui/views/tab_desktop/tab_screen.dart';
 
 import 'shared/app_theme.dart';
@@ -6,7 +7,10 @@ import 'views/tab_desktop/desktop_screen.dart';
 import 'views/mobile/mobile_screen.dart';
 import 'widgets/responsive.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
   runApp(const MyApp());
 }
 
