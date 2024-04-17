@@ -5,7 +5,7 @@ import 'package:swiggy_ui/utils/ui_helper.dart';
 import 'package:swiggy_ui/widgets/custom_divider_view.dart';
 
 class GenieScreen extends StatelessWidget {
-  const GenieScreen({Key? key}) : super(key: key);
+  const GenieScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class GenieScreen extends StatelessWidget {
                             children: <Widget>[
                               Text(
                                 'Genie',
-                                style: Theme.of(context).textTheme.headline4!.copyWith(color: Colors.white),
+                                style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: Colors.white),
                               ),
                               UIHelper.horizontalSpaceSmall(),
                               Image.asset(
@@ -54,7 +54,7 @@ class GenieScreen extends StatelessWidget {
                           UIHelper.verticalSpaceExtraSmall(),
                           Text(
                             'Anything you need, delivered',
-                            style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                            style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                                   color: Colors.grey[200],
                                   fontSize: 17.0,
                                 ),
@@ -79,7 +79,7 @@ class GenieScreen extends StatelessWidget {
                             UIHelper.verticalSpaceMedium(),
                             Text(
                               'Some things we can pick or drop for you',
-                              style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14.0),
+                              style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 14.0),
                             ),
                             UIHelper.verticalSpaceMedium(),
                             LimitedBox(
@@ -117,7 +117,7 @@ class GenieScreen extends StatelessWidget {
                                         services[index].title,
                                         textAlign: TextAlign.center,
                                         maxLines: 2,
-                                        style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 13.5),
+                                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 13.5),
                                       )
                                     ],
                                   ),
@@ -156,10 +156,9 @@ class _HeaderView extends StatelessWidget {
   final String buttonTitle;
 
   const _HeaderView({
-    Key? key,
     required this.title,
     required this.buttonTitle,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -168,7 +167,7 @@ class _HeaderView extends StatelessWidget {
       children: <Widget>[
         Text(
           title,
-          style: Theme.of(context).textTheme.headline6!.copyWith(
+          style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 fontSize: 17.0,
                 fontWeight: FontWeight.bold,
               ),
@@ -182,7 +181,7 @@ class _HeaderView extends StatelessWidget {
             style: ElevatedButton.styleFrom(backgroundColor: darkOrange),
             child: Text(
               buttonTitle,
-              style: Theme.of(context).textTheme.subtitle2!.copyWith(color: Colors.white, fontSize: 14.0),
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.white, fontSize: 14.0),
             ),
             onPressed: () {},
           ),

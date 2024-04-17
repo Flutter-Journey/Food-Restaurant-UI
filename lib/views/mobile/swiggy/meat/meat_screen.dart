@@ -6,7 +6,7 @@ import 'package:swiggy_ui/utils/ui_helper.dart';
 import 'package:swiggy_ui/widgets/custom_divider_view.dart';
 
 class MeatScreen extends StatelessWidget {
-  const MeatScreen({Key? key}) : super(key: key);
+  const MeatScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class MeatScreen extends StatelessWidget {
             UIHelper.horizontalSpaceSmall(),
             Text(
               'Fresh Meat Stores',
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.titleLarge,
             )
           ],
         ),
@@ -104,7 +104,7 @@ class _SearchView extends StatelessWidget {
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: 'Search for restaurants and food',
-                    hintStyle: Theme.of(context).textTheme.subtitle2!.copyWith(
+                    hintStyle: Theme.of(context).textTheme.titleSmall!.copyWith(
                           color: Colors.grey,
                           fontSize: 17.0,
                           fontWeight: FontWeight.w600,
@@ -167,7 +167,7 @@ class _CardView extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         color: Colors.orange[100],
-        border: Border.all(color: swiggyOrange!, width: 2.0),
+        border: Border.all(color: swiggyOrange, width: 2.0),
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Row(
@@ -185,12 +185,12 @@ class _CardView extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         'No-contact Delivery',
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.titleLarge,
                       ),
                       UIHelper.verticalSpaceExtraSmall(),
                       Text(
                         'Have your order dropped of at your door or gate for added safety',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ],
                   ),
@@ -201,7 +201,7 @@ class _CardView extends StatelessWidget {
                     'Know More',
                     style: Theme.of(context)
                         .textTheme
-                        .headline6!
+                        .titleLarge!
                         .copyWith(color: darkOrange),
                   ),
                   onPressed: () {},
@@ -230,10 +230,9 @@ class _StoresListView extends StatelessWidget {
   final foods = SpotlightBestTopFood.getPopularAllRestaurants();
 
   _StoresListView({
-    Key? key,
     required this.title,
     required this.desc,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -286,20 +285,20 @@ class _StoresListView extends StatelessWidget {
                       foods[index].name,
                       style: Theme.of(context)
                           .textTheme
-                          .subtitle2!
+                          .titleSmall!
                           .copyWith(fontSize: 16.0),
                     ),
                     Text(foods[index].desc,
                         style: Theme.of(context)
                             .textTheme
-                            .bodyText1!
+                            .bodyLarge!
                             .copyWith(color: Colors.grey[800], fontSize: 13.5)),
                     UIHelper.verticalSpaceSmall(),
                     Text(
                       foods[index].coupon,
                       style: Theme.of(context)
                           .textTheme
-                          .bodyText1!
+                          .bodyLarge!
                           .copyWith(color: Colors.red[900], fontSize: 13.0),
                     ),
                     const Divider(),
@@ -330,10 +329,9 @@ class _ListViewHeader extends StatelessWidget {
   final String desc;
 
   const _ListViewHeader({
-    Key? key,
     required this.title,
     required this.desc,
-  }) : super(key: key);
+  }) : super();
 
   @override
   Widget build(BuildContext context) {
@@ -350,7 +348,7 @@ class _ListViewHeader extends StatelessWidget {
             UIHelper.horizontalSpaceSmall(),
             Text(
               title,
-              style: Theme.of(context).textTheme.subtitle2!.copyWith(
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(
                     fontSize: 18.0,
                     fontWeight: FontWeight.bold,
                   ),

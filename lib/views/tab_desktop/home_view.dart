@@ -14,7 +14,7 @@ import 'package:swiggy_ui/views/mobile/swiggy/top_offer_view.dart';
 import 'package:swiggy_ui/widgets/custom_divider_view.dart';
 
 class HomeView extends StatelessWidget {
-  const HomeView({Key? key, this.expandFlex = 4}) : super(key: key);
+  const HomeView({super.key, this.expandFlex = 4});
 
   final int expandFlex;
 
@@ -103,7 +103,7 @@ class _Search extends StatelessWidget {
           Expanded(
             child: Text(
               'What would you like to eat?',
-              style: Theme.of(context).textTheme.subtitle1!.copyWith(
+              style: Theme.of(context).textTheme.titleMedium!.copyWith(
                     color: Colors.grey[700],
                     fontWeight: FontWeight.bold,
                   ),

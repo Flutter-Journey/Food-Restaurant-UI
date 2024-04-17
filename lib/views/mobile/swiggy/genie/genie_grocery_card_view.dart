@@ -3,13 +3,12 @@ import 'package:swiggy_ui/utils/app_colors.dart';
 import 'package:swiggy_ui/utils/ui_helper.dart';
 
 class GenieGroceryCardView extends StatelessWidget {
-  const GenieGroceryCardView({
-    Key? key,
+  const GenieGroceryCardView({super.key,
     required this.title,
     required this.image,
     required this.subtitle,
     this.onTap,
-  }) : super(key: key);
+  });
 
   final String title;
   final String image;
@@ -30,9 +29,9 @@ class GenieGroceryCardView extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(horizontal: 4.0),
                 padding: const EdgeInsets.only(top: 8.0),
                 height: 120.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: swiggyOrange,
-                  boxShadow: const <BoxShadow>[
+                  boxShadow: <BoxShadow>[
                     BoxShadow(
                       color: Colors.grey,
                       blurRadius: 3.0,
@@ -50,7 +49,7 @@ class GenieGroceryCardView extends StatelessWidget {
                       textAlign: TextAlign.center,
                       style: Theme.of(context)
                           .textTheme
-                          .headline4!
+                          .headlineMedium!
                           .copyWith(fontSize: 18.0, color: Colors.white),
                     ),
                     UIHelper.verticalSpaceSmall(),
@@ -71,7 +70,7 @@ class GenieGroceryCardView extends StatelessWidget {
               textAlign: TextAlign.center,
               style: Theme.of(context)
                   .textTheme
-                  .bodyText1!
+                  .bodyLarge!
                   .copyWith(fontSize: 16.0),
             ),
           ],

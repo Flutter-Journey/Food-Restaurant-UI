@@ -6,7 +6,7 @@ import 'package:swiggy_ui/views/mobile/swiggy/restaurants/restaurant_detail_scre
 class TopPicksForYouView extends StatelessWidget {
   final foods = TopPicksFood.getTopPicksfoods();
 
-  TopPicksForYouView({Key? key}) : super(key: key);
+  TopPicksForYouView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class TopPicksForYouView extends StatelessWidget {
                 'Top Picks For You',
                 style: Theme.of(context)
                     .textTheme
-                    .headline4!
+                    .headlineMedium!
                     .copyWith(fontSize: 20.0),
               )
             ],
@@ -73,7 +73,7 @@ class TopPicksForYouView extends StatelessWidget {
                           foods[index].name,
                           maxLines: 2,
                           style:
-                              Theme.of(context).textTheme.subtitle2!.copyWith(
+                              Theme.of(context).textTheme.titleSmall!.copyWith(
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -83,7 +83,7 @@ class TopPicksForYouView extends StatelessWidget {
                       Text(
                         foods[index].minutes,
                         maxLines: 1,
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                               color: Colors.grey[700],
                               fontSize: 13.0,
                             ),

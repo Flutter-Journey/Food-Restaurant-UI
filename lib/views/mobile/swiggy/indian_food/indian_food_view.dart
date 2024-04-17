@@ -7,7 +7,7 @@ import 'indian_delight_screen.dart';
 class IndianFoodView extends StatelessWidget {
   final restaurants = IndianFood.getIndianRestaurants();
 
-  IndianFoodView({Key? key}) : super(key: key);
+  IndianFoodView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,7 @@ class IndianFoodView extends StatelessWidget {
                   restaurants[index].name,
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle2!
+                      .titleSmall!
                       .copyWith(color: Colors.grey[700]),
                 )
               ],

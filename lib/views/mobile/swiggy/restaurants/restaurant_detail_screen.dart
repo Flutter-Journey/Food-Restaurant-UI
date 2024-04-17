@@ -5,7 +5,7 @@ import 'package:swiggy_ui/widgets/custom_divider_view.dart';
 import 'package:swiggy_ui/widgets/veg_badge_view.dart';
 
 class RestaurantDetailScreen extends StatelessWidget {
-  const RestaurantDetailScreen({Key? key}) : super(key: key);
+  const RestaurantDetailScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,15 +41,15 @@ class _OrderNowView extends StatelessWidget {
                   'Namma Veedu Vasanta Bhavan',
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle2!
+                      .titleSmall!
                       .copyWith(fontWeight: FontWeight.bold, fontSize: 16.0),
                 ),
                 UIHelper.verticalSpaceSmall(),
                 Text('South Indian',
-                    style: Theme.of(context).textTheme.bodyText1),
+                    style: Theme.of(context).textTheme.bodyLarge),
                 UIHelper.verticalSpaceExtraSmall(),
                 Text('Velachery Main Road, Madipakkam',
-                    style: Theme.of(context).textTheme.bodyText1),
+                    style: Theme.of(context).textTheme.bodyLarge),
                 UIHelper.verticalSpaceMedium(),
                 const CustomDividerView(dividerHeight: 1.0),
                 Row(
@@ -94,7 +94,7 @@ class _OrderNowView extends StatelessWidget {
                       Text('PURE VEG',
                           style: Theme.of(context)
                               .textTheme
-                              .subtitle2!
+                              .titleSmall!
                               .copyWith(
                                   fontWeight: FontWeight.bold, fontSize: 16.0))
                     ],
@@ -110,7 +110,7 @@ class _OrderNowView extends StatelessWidget {
               'Recommended',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleSmall!
                   .copyWith(fontSize: 18.0),
             ),
           ),
@@ -146,7 +146,7 @@ class _OrderNowView extends StatelessWidget {
                 desc,
                 style: Theme.of(context)
                     .textTheme
-                    .bodyText1!
+                    .bodyLarge!
                     .copyWith(fontSize: 13.0),
               ),
             )
@@ -167,14 +167,14 @@ class _OrderNowView extends StatelessWidget {
                 title,
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle2!
+                    .titleSmall!
                     .copyWith(fontSize: 15.0),
               ),
               UIHelper.verticalSpaceExtraSmall(),
               Text(subtitle,
                   style: Theme.of(context)
                       .textTheme
-                      .bodyText1!
+                      .bodyLarge!
                       .copyWith(fontSize: 13.0))
             ],
           ),
@@ -216,7 +216,7 @@ class _RecommendedFoodView extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         'BREAKFAST',
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                               fontSize: 10.0,
                               color: Colors.grey[700],
                             ),
@@ -243,7 +243,7 @@ class _RecommendedFoodView extends StatelessWidget {
                           Text(foods[index].price,
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyLarge!
                                   .copyWith(fontSize: 14.0)),
                           const AddBtnView()
                         ],
@@ -262,8 +262,8 @@ class _RecommendedFoodView extends StatelessWidget {
 
 class AddBtnView extends StatelessWidget {
   const AddBtnView({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -276,7 +276,7 @@ class AddBtnView extends StatelessWidget {
         'ADD',
         style: Theme.of(context)
             .textTheme
-            .subtitle2!
+            .titleSmall!
             .copyWith(color: Colors.green),
       ),
     );
@@ -285,10 +285,9 @@ class AddBtnView extends StatelessWidget {
 
 class _FoodListView extends StatelessWidget {
   const _FoodListView({
-    Key? key,
     required this.title,
     required this.foods,
-  }) : super(key: key);
+  });
 
   final String title;
   final List<RestaurantDetail> foods;
@@ -305,7 +304,7 @@ class _FoodListView extends StatelessWidget {
           Text(
             title,
             style:
-                Theme.of(context).textTheme.subtitle2!.copyWith(fontSize: 18.0),
+                Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18.0),
           ),
           ListView.builder(
             shrinkWrap: true,
@@ -328,14 +327,14 @@ class _FoodListView extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               foods[index].title,
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                             UIHelper.verticalSpaceSmall(),
                             Text(
                               foods[index].price,
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyLarge!
                                   .copyWith(fontSize: 14.0),
                             ),
                             UIHelper.verticalSpaceMedium(),
@@ -345,7 +344,7 @@ class _FoodListView extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyLarge!
                                   .copyWith(
                                     fontSize: 12.0,
                                     color: Colors.grey[500],

@@ -7,7 +7,7 @@ import 'package:swiggy_ui/widgets/responsive.dart';
 class InTheSpotlightView extends StatelessWidget {
   final restaurants = SpotlightBestTopFood.getSpotlightRestaurants();
 
-  InTheSpotlightView({Key? key}) : super(key: key);
+  InTheSpotlightView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +59,7 @@ class InTheSpotlightView extends StatelessWidget {
                   'In the Spotlight!',
                   style: Theme.of(context)
                       .textTheme
-                      .headline4!
+                      .headlineMedium!
                       .copyWith(fontSize: 20.0),
                 )
               ],
@@ -69,7 +69,7 @@ class InTheSpotlightView extends StatelessWidget {
               'Explore sponsored partner brands',
               style: Theme.of(context)
                   .textTheme
-                  .bodyText1!
+                  .bodyLarge!
                   .copyWith(color: Colors.grey),
             ),
           ],

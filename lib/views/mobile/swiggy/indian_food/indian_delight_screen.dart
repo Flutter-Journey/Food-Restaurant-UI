@@ -4,7 +4,7 @@ import 'package:swiggy_ui/utils/ui_helper.dart';
 import '../groceries/grocery_screen.dart';
 
 class IndianDelightScreen extends StatelessWidget {
-  const IndianDelightScreen({Key? key}) : super(key: key);
+  const IndianDelightScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class IndianDelightScreen extends StatelessWidget {
                           'SOUTH INDIAN DELIGHTS',
                           style: Theme.of(context)
                               .textTheme
-                              .subtitle2!
+                              .titleSmall!
                               .copyWith(fontSize: 19.0),
                         ),
                         UIHelper.verticalSpaceSmall(),

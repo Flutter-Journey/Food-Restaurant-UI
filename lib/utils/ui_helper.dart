@@ -13,26 +13,27 @@ class UIHelper {
   static const double _horizontalSpaceLarge = 24.0;
   static const double _horizontalSpaceExtraLarge = 48.0;
 
-  static SizedBox verticalSpaceExtraSmall() =>
-      verticalSpace(_verticalSpaceExtraSmall);
+  static SizedBox verticalSpaceExtraSmall() => verticalSpace(_verticalSpaceExtraSmall);
+
   static SizedBox verticalSpaceSmall() => verticalSpace(_verticalSpaceSmall);
+
   static SizedBox verticalSpaceMedium() => verticalSpace(_verticalSpaceMedium);
+
   static SizedBox verticalSpaceLarge() => verticalSpace(_verticalSpaceLarge);
-  static SizedBox verticalSpaceExtraLarge() =>
-      verticalSpace(_verticalSpaceExtraLarge);
+
+  static SizedBox verticalSpaceExtraLarge() => verticalSpace(_verticalSpaceExtraLarge);
 
   static SizedBox verticalSpace(double height) => SizedBox(height: height);
 
-  static SizedBox horizontalSpaceExtraSmall() =>
-      horizontalSpace(_horizontalSpaceExtraSmall);
-  static SizedBox horizontalSpaceSmall() =>
-      horizontalSpace(_horizontalSpaceSmall);
-  static SizedBox horizontalSpaceMedium() =>
-      horizontalSpace(_horizontalSpaceMedium);
-  static SizedBox horizontalSpaceLarge() =>
-      horizontalSpace(_horizontalSpaceLarge);
-  static SizedBox horizontalSpaceExtraLarge() =>
-      horizontalSpace(_horizontalSpaceExtraLarge);
+  static SizedBox horizontalSpaceExtraSmall() => horizontalSpace(_horizontalSpaceExtraSmall);
+
+  static SizedBox horizontalSpaceSmall() => horizontalSpace(_horizontalSpaceSmall);
+
+  static SizedBox horizontalSpaceMedium() => horizontalSpace(_horizontalSpaceMedium);
+
+  static SizedBox horizontalSpaceLarge() => horizontalSpace(_horizontalSpaceLarge);
+
+  static SizedBox horizontalSpaceExtraLarge() => horizontalSpace(_horizontalSpaceExtraLarge);
 
   static SizedBox horizontalSpace(double width) => SizedBox(width: width);
 }

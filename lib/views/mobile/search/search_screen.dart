@@ -6,7 +6,7 @@ import 'package:swiggy_ui/widgets/custom_divider_view.dart';
 import 'package:swiggy_ui/widgets/mobile/search_food_list_item_view.dart';
 
 class SearchScreen extends StatefulWidget {
-  const SearchScreen({Key? key}) : super(key: key);
+  const SearchScreen({super.key});
 
   @override
   _SearchScreenState createState() => _SearchScreenState();
@@ -51,7 +51,7 @@ class _SearchScreenState extends State<SearchScreen>
                         decoration: InputDecoration(
                           hintText: 'Search for restaurants and food',
                           hintStyle:
-                              Theme.of(context).textTheme.subtitle2!.copyWith(
+                              Theme.of(context).textTheme.titleSmall!.copyWith(
                                     color: Colors.grey,
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w600,
@@ -76,10 +76,10 @@ class _SearchScreenState extends State<SearchScreen>
                 indicatorColor: darkOrange,
                 labelStyle: Theme.of(context)
                     .textTheme
-                    .subtitle2!
+                    .titleSmall!
                     .copyWith(fontSize: 18.0, color: darkOrange),
                 unselectedLabelStyle:
-                    Theme.of(context).textTheme.subtitle2!.copyWith(
+                    Theme.of(context).textTheme.titleSmall!.copyWith(
                           fontSize: 18.0,
                           color: Colors.grey[200],
                         ),

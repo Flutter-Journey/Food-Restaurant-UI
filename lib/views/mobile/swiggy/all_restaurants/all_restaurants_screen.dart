@@ -15,7 +15,7 @@ class AllRestaurantsScreen extends StatelessWidget {
   final restaurantListTwo = AllRestaurant.getRestaurantListTwo();
   final restaurantListThree = AllRestaurant.getRestaurantListThree();
 
-  AllRestaurantsScreen({Key? key}) : super(key: key);
+  AllRestaurantsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -52,20 +52,16 @@ class AllRestaurantsScreen extends StatelessWidget {
                     ),
                     _LargeRestaurantBannerView(
                       title: 'BEST IN SAFETY',
-                      desc:
-                          'SAFEST RESTAURANTS WITH BEST IN CLASS\nSAFETY STANDARDS',
-                      restaurants:
-                          LargeRestaurantBanner.getBestInSafetyRestaurants(),
+                      desc: 'SAFEST RESTAURANTS WITH BEST IN CLASS\nSAFETY STANDARDS',
+                      restaurants: LargeRestaurantBanner.getBestInSafetyRestaurants(),
                     ),
                     _RestaurantListView(
                       restaurants: restaurantListOne,
                     ),
                     _LargeRestaurantBannerView(
                       title: 'PEPSI SAVE OUR RESTAURANTS',
-                      desc:
-                          'ORDER ANY SOFT DRINK & PEPSI WILL DONATE A\nMEAL TO A RESTAURANT WORKER',
-                      restaurants:
-                          LargeRestaurantBanner.getPepsiSaveOurRestaurants(),
+                      desc: 'ORDER ANY SOFT DRINK & PEPSI WILL DONATE A\nMEAL TO A RESTAURANT WORKER',
+                      restaurants: LargeRestaurantBanner.getPepsiSaveOurRestaurants(),
                     ),
                     _RestaurantListView(
                       restaurants: restaurantListThree,
@@ -101,7 +97,7 @@ class AllRestaurantsScreen extends StatelessWidget {
             UIHelper.horizontalSpaceSmall(),
             Text(
               'Now',
-              style: Theme.of(context).textTheme.subtitle2!.copyWith(
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(
                     fontSize: 18.0,
                     color: Colors.grey,
                     fontWeight: FontWeight.bold,
@@ -121,10 +117,7 @@ class AllRestaurantsScreen extends StatelessWidget {
             UIHelper.horizontalSpaceSmall(),
             Text(
               'Other',
-              style: Theme.of(context)
-                  .textTheme
-                  .headline4!
-                  .copyWith(fontSize: 21.0),
+              style: Theme.of(context).textTheme.headlineMedium!.copyWith(fontSize: 21.0),
             ),
             UIHelper.horizontalSpaceExtraSmall(),
             const Spacer(),
@@ -135,10 +128,7 @@ class AllRestaurantsScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(5.0),
                 child: Text(
                   'Offer',
-                  style: Theme.of(context)
-                      .textTheme
-                      .subtitle2!
-                      .copyWith(fontSize: 18.0),
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18.0),
                 ),
               ),
               onTap: () {
@@ -177,8 +167,7 @@ class _FoodHorizontalListView extends StatelessWidget {
               ),
               Container(
                 margin: const EdgeInsets.all(10.0),
-                padding:
-                    const EdgeInsets.symmetric(vertical: 6.0, horizontal: 10.0),
+                padding: const EdgeInsets.symmetric(vertical: 6.0, horizontal: 10.0),
                 color: Colors.white,
                 child: const Text('TRY NOW'),
               ),
@@ -192,8 +181,7 @@ class _FoodHorizontalListView extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 2,
                   child: Text(
                     restaurants[index].name,
-                    style: Theme.of(context).textTheme.headline6!.copyWith(
-                        color: Colors.white, fontWeight: FontWeight.bold),
+                    style: Theme.of(context).textTheme.titleLarge!.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                 ),
               )
@@ -218,8 +206,7 @@ class _CategoriesView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: categories.length,
         itemBuilder: (context, index) => Container(
-            margin:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+            margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
             width: 60.0,
             child: Stack(
               alignment: Alignment.topCenter,
@@ -248,10 +235,7 @@ class _CategoriesView extends StatelessWidget {
                           categories[index].name,
                           maxLines: 2,
                           textAlign: TextAlign.center,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyText1!
-                              .copyWith(fontSize: 13.0),
+                          style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 13.0),
                         ),
                       )
                     ],
@@ -269,10 +253,9 @@ class _RestaurantHorizontalListView extends StatelessWidget {
   final List<IndianFood> restaurants;
 
   const _RestaurantHorizontalListView({
-    Key? key,
     required this.title,
     required this.restaurants,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -287,8 +270,7 @@ class _RestaurantHorizontalListView extends StatelessWidget {
           UIHelper.verticalSpaceSmall(),
           Text(
             title,
-            style:
-                Theme.of(context).textTheme.subtitle2!.copyWith(fontSize: 18.0),
+            style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18.0),
           ),
           UIHelper.verticalSpaceSmall(),
           Flexible(
@@ -314,10 +296,7 @@ class _RestaurantHorizontalListView extends StatelessWidget {
                       UIHelper.verticalSpaceExtraSmall(),
                       Text(
                         restaurants[index].name,
-                        style: Theme.of(context)
-                            .textTheme
-                            .subtitle2!
-                            .copyWith(color: Colors.grey[700]),
+                        style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.grey[700]),
                       )
                     ],
                   ),
@@ -343,9 +322,8 @@ class _RestaurantHorizontalListView extends StatelessWidget {
 
 class _RestaurantListView extends StatelessWidget {
   const _RestaurantListView({
-    Key? key,
     required this.restaurants,
-  }) : super(key: key);
+  });
 
   final List<SpotlightBestTopFood> restaurants;
 
@@ -367,11 +345,10 @@ class _RestaurantListView extends StatelessWidget {
 
 class _LargeRestaurantBannerView extends StatelessWidget {
   const _LargeRestaurantBannerView({
-    Key? key,
     required this.title,
     required this.desc,
     required this.restaurants,
-  }) : super(key: key);
+  });
 
   final String title;
   final String desc;
@@ -388,14 +365,13 @@ class _LargeRestaurantBannerView extends StatelessWidget {
           UIHelper.verticalSpaceMedium(),
           Text(
             title,
-            style:
-                Theme.of(context).textTheme.subtitle2!.copyWith(fontSize: 18.0),
+            style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18.0),
           ),
           UIHelper.verticalSpaceSmall(),
           Text(
             desc,
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyText1!.copyWith(
+            style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                   color: Colors.grey,
                   fontSize: 12.0,
                 ),
@@ -423,7 +399,7 @@ class _LargeRestaurantBannerView extends StatelessWidget {
                       restaurants[index].title,
                       maxLines: 2,
                       textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                      style: Theme.of(context).textTheme.titleSmall!.copyWith(
                             fontWeight: FontWeight.bold,
                             fontSize: 13.0,
                           ),
@@ -439,7 +415,7 @@ class _LargeRestaurantBannerView extends StatelessWidget {
                       restaurants[index].subtitle,
                       maxLines: 2,
                       textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ],
                 ),

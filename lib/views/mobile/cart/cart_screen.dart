@@ -5,7 +5,7 @@ import 'package:swiggy_ui/widgets/custom_divider_view.dart';
 import 'package:swiggy_ui/widgets/veg_badge_view.dart';
 
 class CartScreen extends StatelessWidget {
-  const CartScreen({Key? key}) : super(key: key);
+  const CartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -57,13 +57,7 @@ class _OrderViewState extends State<_OrderView> {
               ),
               UIHelper.horizontalSpaceSmall(),
               Column(
-                children: <Widget>[
-                  Text('Breakfast Express',
-                      style: Theme.of(context).textTheme.subtitle2),
-                  UIHelper.verticalSpaceExtraSmall(),
-                  Text('OMR Perungudi',
-                      style: Theme.of(context).textTheme.bodyText1)
-                ],
+                children: <Widget>[Text('Breakfast Express', style: Theme.of(context).textTheme.titleSmall), UIHelper.verticalSpaceExtraSmall(), Text('OMR Perungudi', style: Theme.of(context).textTheme.bodyLarge)],
               )
             ],
           ),
@@ -75,7 +69,7 @@ class _OrderViewState extends State<_OrderView> {
               Flexible(
                 child: Text(
                   'Aloo Paratha with Curd and Pickle',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
               UIHelper.horizontalSpaceSmall(),
@@ -102,11 +96,7 @@ class _OrderViewState extends State<_OrderView> {
                       },
                     ),
                     const Spacer(),
-                    Text('$cartCount',
-                        style: Theme.of(context)
-                            .textTheme
-                            .subtitle2!
-                            .copyWith(fontSize: 16.0)),
+                    Text('$cartCount', style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 16.0)),
                     const Spacer(),
                     InkWell(
                       child: const Icon(Icons.add, color: Colors.green),
@@ -122,7 +112,7 @@ class _OrderViewState extends State<_OrderView> {
               UIHelper.horizontalSpaceSmall(),
               Text(
                 'Rs125',
-                style: Theme.of(context).textTheme.bodyText1,
+                style: Theme.of(context).textTheme.bodyLarge,
               ),
             ],
           ),
@@ -137,8 +127,7 @@ class _OrderViewState extends State<_OrderView> {
               Icon(Icons.library_books, color: Colors.grey[700]),
               UIHelper.horizontalSpaceSmall(),
               const Expanded(
-                child: Text(
-                    'Any restaurant request? We will try our best to convey it'),
+                child: Text('Any restaurant request? We will try our best to convey it'),
               )
             ],
           ),
@@ -160,8 +149,7 @@ class _CouponView extends StatelessWidget {
           UIHelper.horizontalSpaceMedium(),
           Text(
             'APPLY COUPON',
-            style:
-                Theme.of(context).textTheme.subtitle2!.copyWith(fontSize: 16.0),
+            style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 16.0),
           ),
           const Spacer(),
           const Icon(Icons.keyboard_arrow_right, color: Colors.grey),
@@ -174,8 +162,7 @@ class _CouponView extends StatelessWidget {
 class _BillDetailView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final textStyle =
-        Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 16.0);
+    final textStyle = Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 16.0);
 
     return Container(
       padding: const EdgeInsets.all(20.0),
@@ -184,8 +171,7 @@ class _BillDetailView extends StatelessWidget {
         children: <Widget>[
           Text(
             'Bill Details',
-            style:
-                Theme.of(context).textTheme.headline6!.copyWith(fontSize: 17.0),
+            style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 17.0),
           ),
           UIHelper.verticalSpaceSmall(),
           Row(
@@ -205,19 +191,12 @@ class _BillDetailView extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     Row(
-                      children: <Widget>[
-                        Text('Delivery Fee', style: textStyle),
-                        UIHelper.horizontalSpaceSmall(),
-                        const Icon(Icons.info_outline, size: 14.0)
-                      ],
+                      children: <Widget>[Text('Delivery Fee', style: textStyle), UIHelper.horizontalSpaceSmall(), const Icon(Icons.info_outline, size: 14.0)],
                     ),
                     UIHelper.verticalSpaceSmall(),
                     Text(
                       'Your Delivery Partner is travelling long distance to deliver your order',
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyText1!
-                          .copyWith(fontSize: 13.0),
+                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 13.0),
                     ),
                   ],
                 ),
@@ -246,7 +225,7 @@ class _BillDetailView extends StatelessWidget {
             height: 60.0,
             child: Row(
               children: <Widget>[
-                Text('To Pay', style: Theme.of(context).textTheme.subtitle2),
+                Text('To Pay', style: Theme.of(context).textTheme.titleSmall),
                 const Spacer(),
                 Text('Rs 210.00', style: textStyle),
               ],
@@ -288,10 +267,7 @@ class _AddressPaymentView extends StatelessWidget {
               Expanded(
                 child: Text(
                   'Want your order left outside? Call delivery executive',
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText1!
-                      .copyWith(color: Colors.white),
+                  style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.white),
                 ),
               )
             ],
@@ -333,22 +309,16 @@ class _AddressPaymentView extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       'Deliver to Other',
-                      style: Theme.of(context)
-                          .textTheme
-                          .subtitle2!
-                          .copyWith(fontSize: 16.0),
+                      style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 16.0),
                     ),
                     Text(
                       'Keelkattalai',
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyText1!
-                          .copyWith(color: Colors.grey),
+                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.grey),
                     ),
                     UIHelper.verticalSpaceSmall(),
                     Text(
                       '43 MINS',
-                      style: Theme.of(context).textTheme.subtitle2,
+                      style: Theme.of(context).textTheme.titleSmall,
                     ),
                   ],
                 ),
@@ -356,10 +326,7 @@ class _AddressPaymentView extends StatelessWidget {
               InkWell(
                 child: Text(
                   'ADD ADDRESS',
-                  style: Theme.of(context)
-                      .textTheme
-                      .subtitle2!
-                      .copyWith(color: darkOrange),
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: darkOrange),
                 ),
                 onTap: () {},
               ),
@@ -379,18 +346,12 @@ class _AddressPaymentView extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       'Rs210.00',
-                      style: Theme.of(context)
-                          .textTheme
-                          .subtitle2!
-                          .copyWith(fontSize: 16.0),
+                      style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 16.0),
                     ),
                     UIHelper.verticalSpaceExtraSmall(),
                     Text(
                       'VIEW DETAIL BILL',
-                      style: Theme.of(context)
-                          .textTheme
-                          .subtitle2!
-                          .copyWith(color: Colors.blue, fontSize: 13.0),
+                      style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.blue, fontSize: 13.0),
                     ),
                   ],
                 ),
@@ -404,10 +365,7 @@ class _AddressPaymentView extends StatelessWidget {
                 height: 58.0,
                 child: Text(
                   'PROCEED TO PAY',
-                  style: Theme.of(context)
-                      .textTheme
-                      .subtitle2!
-                      .copyWith(color: Colors.white),
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.white),
                 ),
               ),
             )

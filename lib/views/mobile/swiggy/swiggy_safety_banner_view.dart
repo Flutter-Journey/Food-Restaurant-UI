@@ -4,7 +4,7 @@ import 'package:swiggy_ui/utils/ui_helper.dart';
 import 'package:swiggy_ui/widgets/responsive.dart';
 
 class SwiggySafetyBannerView extends StatelessWidget {
-  const SwiggySafetyBannerView({Key? key}) : super(key: key);
+  const SwiggySafetyBannerView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class SwiggySafetyBannerView extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Icon(
+              const Icon(
                 Icons.arrow_downward,
                 color: swiggyOrange,
               ),
@@ -27,7 +27,7 @@ class SwiggySafetyBannerView extends StatelessWidget {
               Flexible(
                 child: Text(
                   "SWIGGY's KEY MEASURES TO ENSURE SAFETY",
-                  style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(
                         color: swiggyOrange,
                         fontSize: 15.0,
                         fontWeight: FontWeight.w700,
@@ -35,7 +35,7 @@ class SwiggySafetyBannerView extends StatelessWidget {
                 ),
               ),
               UIHelper.horizontalSpaceExtraSmall(),
-              Icon(
+              const Icon(
                 Icons.arrow_downward,
                 color: swiggyOrange,
               ),
@@ -54,7 +54,7 @@ class SwiggySafetyBannerView extends StatelessWidget {
                 width: cardWidth,
                 decoration: BoxDecoration(
                   color: Colors.orange[100],
-                  border: Border.all(color: swiggyOrange!, width: 2.0),
+                  border: Border.all(color: swiggyOrange, width: 2.0),
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Row(
@@ -73,12 +73,12 @@ class SwiggySafetyBannerView extends StatelessWidget {
                               children: <Widget>[
                                 Text(
                                   'No-contact Delivery',
-                                  style: Theme.of(context).textTheme.headline6,
+                                  style: Theme.of(context).textTheme.titleLarge,
                                 ),
                                 UIHelper.verticalSpaceExtraSmall(),
                                 Text(
                                   'Have your order dropped of at your door or gate for added safety',
-                                  style: Theme.of(context).textTheme.bodyText1,
+                                  style: Theme.of(context).textTheme.bodyLarge,
                                 ),
                               ],
                             ),
@@ -89,7 +89,7 @@ class SwiggySafetyBannerView extends StatelessWidget {
                               'Know More',
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline6!
+                                  .titleLarge!
                                   .copyWith(color: darkOrange),
                             ),
                             onPressed: () {},

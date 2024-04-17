@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DottedSeperatorView extends StatelessWidget {
-  const DottedSeperatorView({Key? key}) : super(key: key);
+  const DottedSeperatorView({super.key});
 
   @override
   Widget build(BuildContext context) {

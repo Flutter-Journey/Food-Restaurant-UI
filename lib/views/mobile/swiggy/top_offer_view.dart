@@ -7,7 +7,7 @@ import 'package:swiggy_ui/widgets/mobile/spotlight_best_top_food_item.dart';
 class TopOffersViews extends StatelessWidget {
   final restaurants = SpotlightBestTopFood.getTopRestaurants();
 
-  TopOffersViews({Key? key}) : super(key: key);
+  TopOffersViews({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class TopOffersViews extends StatelessWidget {
                       'Top Offers',
                       style: Theme.of(context)
                           .textTheme
-                          .headline4!
+                          .headlineMedium!
                           .copyWith(fontSize: 20.0),
                     ),
                     const Spacer(),
@@ -39,7 +39,7 @@ class TopOffersViews extends StatelessWidget {
                           'SEE ALL',
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1!
+                              .bodyLarge!
                               .copyWith(fontWeight: FontWeight.bold),
                         ),
                         UIHelper.horizontalSpaceExtraSmall(),
@@ -65,7 +65,7 @@ class TopOffersViews extends StatelessWidget {
                   'Get 20-50% Off',
                   style: Theme.of(context)
                       .textTheme
-                      .bodyText1!
+                      .bodyLarge!
                       .copyWith(color: Colors.grey),
                 ),
               ],

@@ -4,8 +4,7 @@ import 'package:swiggy_ui/utils/app_colors.dart';
 import 'package:swiggy_ui/utils/ui_helper.dart';
 
 class MenuView extends StatelessWidget {
-  const MenuView({Key? key, this.expandFlex = 2, this.isTab = false})
-      : super(key: key);
+  const MenuView({super.key, this.expandFlex = 2, this.isTab = false});
 
   final int expandFlex;
   final bool isTab;
@@ -19,11 +18,7 @@ class MenuView extends StatelessWidget {
       child: Container(
         color: Colors.white,
         alignment: Alignment.center,
-        padding: EdgeInsets.only(
-            left: isTab ? 20.0 : 40.0,
-            top: 40.0,
-            right: isTab ? 20.0 : 40.0,
-            bottom: 20.0),
+        padding: EdgeInsets.only(left: isTab ? 20.0 : 40.0, top: 40.0, right: isTab ? 20.0 : 40.0, bottom: 20.0),
         child: Column(
           children: [
             ListView(
@@ -52,7 +47,8 @@ class MenuView extends StatelessWidget {
                         label: const Text('Logout'),
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          foregroundColor: swiggyOrange, side: BorderSide(width: 2.0, color: swiggyOrange!),
+                          foregroundColor: swiggyOrange,
+                          side: const BorderSide(width: 2.0, color: swiggyOrange),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(32.0),
                           ),
@@ -68,8 +64,7 @@ class MenuView extends StatelessWidget {
 }
 
 class _MenuItem extends StatefulWidget {
-  const _MenuItem({Key? key, required this.menu, this.isTab = false})
-      : super(key: key);
+  const _MenuItem({required this.menu, this.isTab = false});
 
   final Menu menu;
   final bool isTab;
@@ -80,16 +75,15 @@ class _MenuItem extends StatefulWidget {
 
 class __MenuItemState extends State<_MenuItem> {
   bool isHovered = false;
+
   bool get isTab => widget.isTab;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      margin:
-          isTab ? EdgeInsets.zero : const EdgeInsets.symmetric(vertical: 5.0),
-      padding:
-          EdgeInsets.symmetric(vertical: 5.0, horizontal: isTab ? 0.0 : 10.0),
+      margin: isTab ? EdgeInsets.zero : const EdgeInsets.symmetric(vertical: 5.0),
+      padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: isTab ? 0.0 : 10.0),
       child: InkWell(
         onTap: () {},
         onHover: (value) {
@@ -106,14 +100,10 @@ class __MenuItemState extends State<_MenuItem> {
                   borderRadius: BorderRadius.circular(30.0),
                 )
               : null,
-          padding: isTab
-              ? const EdgeInsets.symmetric(vertical: 10.0)
-              : const EdgeInsets.only(
-                  left: 15.0, top: 10.0, right: 25.0, bottom: 10.0),
+          padding: isTab ? const EdgeInsets.symmetric(vertical: 10.0) : const EdgeInsets.only(left: 15.0, top: 10.0, right: 25.0, bottom: 10.0),
           child: isTab
               ? IconButton(
-                  icon: Icon(widget.menu.icon,
-                      color: isHovered ? swiggyOrange : Colors.black),
+                  icon: Icon(widget.menu.icon, color: isHovered ? swiggyOrange : Colors.black),
                   iconSize: 30.0,
                   onPressed: () {},
                 )
@@ -122,13 +112,11 @@ class __MenuItemState extends State<_MenuItem> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Icon(widget.menu.icon,
-                        color: isHovered ? swiggyOrange : Colors.black,
-                        size: 30.0),
+                    Icon(widget.menu.icon, color: isHovered ? swiggyOrange : Colors.black, size: 30.0),
                     UIHelper.horizontalSpaceMedium(),
                     Text(
                       widget.menu.title,
-                      style: Theme.of(context).textTheme.headline6!.copyWith(
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
                             color: isHovered ? swiggyOrange : Colors.black,
                           ),
                     ),

@@ -5,7 +5,7 @@ import 'package:swiggy_ui/widgets/mobile/search_food_list_item_view.dart';
 import 'package:swiggy_ui/widgets/responsive.dart';
 
 class GroceryScreen extends StatelessWidget {
-  const GroceryScreen({Key? key}) : super(key: key);
+  const GroceryScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +27,7 @@ class GroceryScreen extends StatelessWidget {
 }
 
 class _GroceryHeaderView extends StatelessWidget {
-  const _GroceryHeaderView({
-    Key? key,
-  }) : super(key: key);
+  const _GroceryHeaderView();
 
   @override
   Widget build(BuildContext context) {
@@ -64,10 +62,9 @@ class _GroceryHeaderView extends StatelessWidget {
 }
 
 class GroceryListView extends StatelessWidget {
-  const GroceryListView({
-    Key? key,
+  const GroceryListView({super.key,
     required this.title,
-  }) : super(key: key);
+  });
 
   final String title;
 
@@ -77,7 +74,7 @@ class GroceryListView extends StatelessWidget {
 
     final headerStyle = Theme.of(context)
         .textTheme
-        .bodyText1!
+        .bodyLarge!
         .copyWith(fontWeight: FontWeight.w500, fontSize: 13.0);
 
     return Container(

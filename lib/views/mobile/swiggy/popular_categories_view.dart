@@ -5,7 +5,7 @@ import 'package:swiggy_ui/utils/ui_helper.dart';
 class PopularCategoriesView extends StatelessWidget {
   final categories = PopularCategory.getPopularCategories();
 
-  PopularCategoriesView({Key? key}) : super(key: key);
+  PopularCategoriesView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class PopularCategoriesView extends StatelessWidget {
           Text(
             'Popular Categories',
             style:
-                Theme.of(context).textTheme.headline4!.copyWith(fontSize: 20.0),
+                Theme.of(context).textTheme.headlineMedium!.copyWith(fontSize: 20.0),
           ),
           UIHelper.verticalSpaceMedium(),
           LimitedBox(

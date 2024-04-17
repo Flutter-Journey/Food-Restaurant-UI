@@ -4,7 +4,7 @@ import 'package:swiggy_ui/utils/ui_helper.dart';
 import 'package:swiggy_ui/widgets/dotted_seperator_view.dart';
 
 class GenieView extends StatelessWidget {
-  const GenieView({Key? key}) : super(key: key);
+  const GenieView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +20,13 @@ class GenieView extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text('Genie', style: Theme.of(context).textTheme.headline4),
+                    Text('Genie', style: Theme.of(context).textTheme.headlineMedium),
                     UIHelper.verticalSpaceSmall(),
                     Text(
                       'Anything you need, deliverd.\nPick-up, Drop or Buy anything,\nfrom anywhere in your city',
                       style: Theme.of(context)
                           .textTheme
-                          .bodyText1!
+                          .bodyLarge!
                           .copyWith(color: Colors.grey),
                     )
                   ],
@@ -45,10 +45,10 @@ class GenieView extends StatelessWidget {
           UIHelper.verticalSpaceMedium(),
           const DottedSeperatorView(),
           UIHelper.verticalSpaceMedium(),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const <Widget>[
+            children: <Widget>[
               _GenieCardView(
                 title: 'Buy\nAnything',
                 desc: 'Stationery\nMedicine\nGrocery\n& more',
@@ -69,12 +69,11 @@ class GenieView extends StatelessWidget {
 
 class _GenieCardView extends StatelessWidget {
   const _GenieCardView({
-    Key? key,
     required this.title,
     required this.desc,
     required this.image,
     this.onTap,
-  }) : super(key: key);
+  });
 
   final String title;
   final String desc;
@@ -107,7 +106,7 @@ class _GenieCardView extends StatelessWidget {
                 title,
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle2!
+                    .titleSmall!
                     .copyWith(fontSize: 22.0),
               ),
               UIHelper.verticalSpaceMedium(),
@@ -119,7 +118,7 @@ class _GenieCardView extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         desc,
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                       UIHelper.verticalSpaceSmall(),
                       ClipOval(

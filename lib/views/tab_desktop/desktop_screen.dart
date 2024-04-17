@@ -5,14 +5,14 @@ import 'home_view.dart';
 import 'menu_view.dart';
 
 class DesktopScreen extends StatelessWidget {
-  const DesktopScreen({Key? key}) : super(key: key);
+  const DesktopScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
+        children: [
           MenuView(),
           HomeView(),
           CartView(),

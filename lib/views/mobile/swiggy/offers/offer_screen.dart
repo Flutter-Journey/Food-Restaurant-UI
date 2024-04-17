@@ -8,7 +8,7 @@ import 'package:swiggy_ui/widgets/mobile/food_list_item_view.dart';
 import '../restaurants/restaurant_detail_screen.dart';
 
 class OffersScreen extends StatelessWidget {
-  const OffersScreen({Key? key}) : super(key: key);
+  const OffersScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class OffersScreen extends StatelessWidget {
           title: Text(
             'OFFERS',
             style:
-                Theme.of(context).textTheme.subtitle2!.copyWith(fontSize: 17.0),
+                Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 17.0),
           ),
           bottom: const TabBar(
             indicatorColor: Colors.black,
@@ -60,7 +60,7 @@ class _RestaurantOfferView extends StatelessWidget {
             'All Offers (${foods.length})',
             style: Theme.of(context)
                 .textTheme
-                .headline6!
+                .titleLarge!
                 .copyWith(fontWeight: FontWeight.bold, fontSize: 19.0),
           ),
           UIHelper.verticalSpaceMedium(),
@@ -107,7 +107,7 @@ class _PaymentOffersCouponView extends StatelessWidget {
           height: 40.0,
           color: Colors.grey[200],
           child: Text('Available Coupons',
-              style: Theme.of(context).textTheme.subtitle2),
+              style: Theme.of(context).textTheme.titleSmall),
         ),
         Expanded(
           child: ListView.separated(
@@ -137,14 +137,14 @@ class _PaymentOffersCouponView extends StatelessWidget {
                         ),
                         UIHelper.horizontalSpaceMedium(),
                         Text(coupons[index].coupon,
-                            style: Theme.of(context).textTheme.subtitle2)
+                            style: Theme.of(context).textTheme.titleSmall)
                       ],
                     ),
                   ),
                   UIHelper.verticalSpaceSmall(),
                   Text(
                     coupons[index].discount,
-                    style: Theme.of(context).textTheme.subtitle2,
+                    style: Theme.of(context).textTheme.titleSmall,
                   ),
                   UIHelper.verticalSpaceMedium(),
                   const CustomDividerView(
@@ -156,7 +156,7 @@ class _PaymentOffersCouponView extends StatelessWidget {
                     coupons[index].desc,
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1!
+                        .bodyLarge!
                         .copyWith(fontSize: 13.0),
                   ),
                   UIHelper.verticalSpaceMedium(),
@@ -165,7 +165,7 @@ class _PaymentOffersCouponView extends StatelessWidget {
                       '+ MORE',
                       style: Theme.of(context)
                           .textTheme
-                          .subtitle2!
+                          .titleSmall!
                           .copyWith(color: Colors.blue),
                     ),
                   )

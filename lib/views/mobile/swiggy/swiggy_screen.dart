@@ -21,7 +21,7 @@ import 'top_offer_view.dart';
 import 'top_picks_for_you_view.dart';
 
 class SwiggyScreen extends StatelessWidget {
-  const SwiggyScreen({Key? key}) : super(key: key);
+  const SwiggyScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +84,7 @@ class SwiggyScreen extends StatelessWidget {
           children: <Widget>[
             Text(
               'Other',
-              style: Theme.of(context).textTheme.headline4!.copyWith(fontSize: 21.0),
+              style: Theme.of(context).textTheme.headlineMedium!.copyWith(fontSize: 21.0),
             ),
             UIHelper.horizontalSpaceExtraSmall(),
             const Padding(
@@ -99,7 +99,7 @@ class SwiggyScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(5.0),
                 child: Text(
                   'Offer',
-                  style: Theme.of(context).textTheme.subtitle2!.copyWith(fontSize: 18.0),
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18.0),
                 ),
               ),
               onTap: () {
@@ -118,8 +118,8 @@ class SwiggyScreen extends StatelessWidget {
 
 class SeeAllRestaurantBtn extends StatelessWidget {
   const SeeAllRestaurantBtn({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -144,7 +144,7 @@ class SeeAllRestaurantBtn extends StatelessWidget {
               },
         child: Text(
           'See all restaurants',
-          style: Theme.of(context).textTheme.subtitle2!.copyWith(color: Colors.white, fontSize: 19.0),
+          style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.white, fontSize: 19.0),
         ),
       ),
     );
@@ -153,8 +153,8 @@ class SeeAllRestaurantBtn extends StatelessWidget {
 
 class LiveForFoodView extends StatelessWidget {
   const LiveForFoodView({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -171,7 +171,7 @@ class LiveForFoodView extends StatelessWidget {
             children: <Widget>[
               Text(
                 'LIVE\nFOR\nFOOD',
-                style: Theme.of(context).textTheme.headline4!.copyWith(
+                style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                       color: Colors.grey[400],
                       fontSize: 80.0,
                       letterSpacing: 0.2,
@@ -181,11 +181,11 @@ class LiveForFoodView extends StatelessWidget {
               UIHelper.verticalSpaceLarge(),
               Text(
                 'MADE BY FOOD LOVERS',
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(color: Colors.grey),
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.grey),
               ),
               Text(
                 'SWIGGY HQ, BANGALORE',
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(color: Colors.grey),
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.grey),
               ),
               UIHelper.verticalSpaceExtraLarge(),
               Row(

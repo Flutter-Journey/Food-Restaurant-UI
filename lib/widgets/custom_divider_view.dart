@@ -5,11 +5,10 @@ class CustomDividerView extends StatelessWidget {
   final Color? color;
 
   const CustomDividerView({
-    Key? key,
+    super.key,
     this.dividerHeight = 10.0,
     this.color,
-  })  : assert(dividerHeight != 0.0),
-        super(key: key);
+  }) : assert(dividerHeight != 0.0);
 
   @override
   Widget build(BuildContext context) {

@@ -4,9 +4,9 @@ import 'package:swiggy_ui/utils/ui_helper.dart';
 
 class SearchFoodListItemView extends StatelessWidget {
   const SearchFoodListItemView({
-    Key? key,
+    super.key,
     required this.food,
-  }) : super(key: key);
+  });
 
   final SpotlightBestTopFood food;
 
@@ -43,16 +43,9 @@ class SearchFoodListItemView extends StatelessWidget {
               children: <Widget>[
                 Text(
                   food.name,
-                  style: Theme.of(context)
-                      .textTheme
-                      .subtitle2!
-                      .copyWith(fontSize: 15.0),
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 15.0),
                 ),
-                Text(food.desc,
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyText1!
-                        .copyWith(color: Colors.grey[600], fontSize: 13.5)),
+                Text(food.desc, style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.grey[600], fontSize: 13.5)),
                 UIHelper.verticalSpaceSmall(),
                 Row(
                   children: <Widget>[

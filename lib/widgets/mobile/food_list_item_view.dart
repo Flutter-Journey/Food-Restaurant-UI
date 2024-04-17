@@ -7,9 +7,9 @@ class FoodListItemView extends StatelessWidget {
   final SpotlightBestTopFood restaurant;
 
   const FoodListItemView({
-    Key? key,
+    super.key,
     required this.restaurant,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -42,23 +42,13 @@ class FoodListItemView extends StatelessWidget {
             children: <Widget>[
               Text(
                 restaurant.name,
-                style: Theme.of(context)
-                    .textTheme
-                    .subtitle2!
-                    .copyWith(fontSize: 18.0),
+                style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 18.0),
               ),
-              Text(restaurant.desc,
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText1!
-                      .copyWith(color: Colors.grey[800], fontSize: 13.5)),
+              Text(restaurant.desc, style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.grey[800], fontSize: 13.5)),
               UIHelper.verticalSpaceExtraSmall(),
               Text(
                 restaurant.coupon,
-                style: Theme.of(context)
-                    .textTheme
-                    .bodyText1!
-                    .copyWith(color: Colors.red[900], fontSize: 13.0),
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.red[900], fontSize: 13.0),
               ),
               UIHelper.verticalSpaceSmall(),
               Row(

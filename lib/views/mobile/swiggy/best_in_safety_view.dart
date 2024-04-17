@@ -8,7 +8,7 @@ import 'package:swiggy_ui/widgets/responsive.dart';
 class BestInSafetyViews extends StatelessWidget {
   final restaurants = SpotlightBestTopFood.getBestRestaurants();
 
-  BestInSafetyViews({Key? key}) : super(key: key);
+  BestInSafetyViews({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class BestInSafetyViews extends StatelessWidget {
                       'Best in Safety',
                       style: Theme.of(context)
                           .textTheme
-                          .headline4!
+                          .headlineMedium!
                           .copyWith(fontSize: 20.0),
                     ),
                     const Spacer(),
@@ -44,7 +44,7 @@ class BestInSafetyViews extends StatelessWidget {
                           'SEE ALL',
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1!
+                              .bodyLarge!
                               .copyWith(fontWeight: FontWeight.bold),
                         ),
                         UIHelper.horizontalSpaceExtraSmall(),
@@ -70,7 +70,7 @@ class BestInSafetyViews extends StatelessWidget {
                   'Restaurants with best safety standards',
                   style: Theme.of(context)
                       .textTheme
-                      .bodyText1!
+                      .bodyLarge!
                       .copyWith(color: Colors.grey),
                 ),
               ],

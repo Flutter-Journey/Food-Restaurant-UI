@@ -18,7 +18,7 @@ class AccountScreen extends StatelessWidget {
     'FAQ & Links',
   ];
 
-  AccountScreen({Key? key}) : super(key: key);
+  AccountScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,10 +46,7 @@ class AccountScreen extends StatelessWidget {
                 color: Colors.grey[200],
                 child: Text(
                   'PAST ORDERS',
-                  style: Theme.of(context)
-                      .textTheme
-                      .subtitle2!
-                      .copyWith(color: Colors.grey[700], fontSize: 12.0),
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.grey[700], fontSize: 12.0),
                 ),
               ),
               _PastOrderListView(),
@@ -64,7 +61,7 @@ class AccountScreen extends StatelessWidget {
 class _AppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final subtitleStyle = Theme.of(context).textTheme.bodyText1;
+    final subtitleStyle = Theme.of(context).textTheme.bodyLarge;
 
     return Container(
       padding: const EdgeInsets.all(15.0),
@@ -75,18 +72,12 @@ class _AppBar extends StatelessWidget {
             children: <Widget>[
               Text(
                 'VINOTH',
-                style: Theme.of(context)
-                    .textTheme
-                    .headline6!
-                    .copyWith(fontWeight: FontWeight.bold, fontSize: 18.0),
+                style: Theme.of(context).textTheme.titleLarge!.copyWith(fontWeight: FontWeight.bold, fontSize: 18.0),
               ),
               InkWell(
                 child: Text(
                   'EDIT',
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline6!
-                      .copyWith(fontSize: 17.0, color: darkOrange),
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 17.0, color: darkOrange),
                 ),
                 onTap: () {},
               )
@@ -121,12 +112,10 @@ class _AppBar extends StatelessWidget {
 
 class _ListItem extends StatelessWidget {
   const _ListItem({
-    Key? key,
     required this.title,
     required this.body,
     this.isLastItem = false,
-  })  : assert(title != '', body != ''),
-        super(key: key);
+  }) : assert(title != '', body != '');
 
   final String title;
   final String body;
@@ -150,18 +139,12 @@ class _ListItem extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       title,
-                      style: Theme.of(context)
-                          .textTheme
-                          .headline6!
-                          .copyWith(fontSize: 15.0),
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 15.0),
                     ),
                     UIHelper.verticalSpaceExtraSmall(),
                     Text(
                       body,
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyText1!
-                          .copyWith(fontSize: 13.0, color: Colors.black),
+                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 13.0, color: Colors.black),
                     ),
                   ],
                 ),
@@ -215,10 +198,7 @@ class _PastOrderListView extends StatelessWidget {
         TextButton(
           child: Text(
             'VIEW MORE ORDERS',
-            style: Theme.of(context)
-                .textTheme
-                .subtitle2!
-                .copyWith(color: darkOrange),
+            style: Theme.of(context).textTheme.titleSmall!.copyWith(color: darkOrange),
           ),
           onPressed: () {},
         ),
@@ -232,10 +212,7 @@ class _PastOrderListView extends StatelessWidget {
               height: 50.0,
               child: Text(
                 'LOGOUT',
-                style: Theme.of(context)
-                    .textTheme
-                    .subtitle2!
-                    .copyWith(fontSize: 16.0),
+                style: Theme.of(context).textTheme.titleSmall!.copyWith(fontSize: 16.0),
               ),
             ),
             const Spacer(),
@@ -250,10 +227,7 @@ class _PastOrderListView extends StatelessWidget {
           color: Colors.grey[200],
           child: Text(
             'App Version v3.2.0',
-            style: Theme.of(context)
-                .textTheme
-                .bodyText1!
-                .copyWith(color: Colors.grey[700], fontSize: 13.0),
+            style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.grey[700], fontSize: 13.0),
           ),
         )
       ],
@@ -263,11 +237,9 @@ class _PastOrderListView extends StatelessWidget {
 
 class _PastOrdersListItemView extends StatelessWidget {
   const _PastOrdersListItemView({
-    Key? key,
     required this.restaurant,
     required this.foodItem,
-  })  : assert(restaurant != '', foodItem != ''),
-        super(key: key);
+  }) : assert(restaurant != '', foodItem != '');
 
   final String restaurant;
   final String foodItem;
@@ -291,36 +263,27 @@ class _PastOrdersListItemView extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       restaurant,
-                      style: Theme.of(context).textTheme.subtitle2,
+                      style: Theme.of(context).textTheme.titleSmall,
                     ),
                     UIHelper.verticalSpaceExtraSmall(),
                     Text(
                       'Medavakkam',
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyText1!
-                          .copyWith(fontSize: 12.0),
+                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 12.0),
                     ),
                     UIHelper.verticalSpaceSmall(),
                     Row(
-                      children: <Widget>[
-                        const Text('Rs112'),
-                        UIHelper.horizontalSpaceExtraSmall(),
-                        Icon(Icons.keyboard_arrow_right,
-                            color: Colors.grey[600])
-                      ],
+                      children: <Widget>[const Text('Rs112'), UIHelper.horizontalSpaceExtraSmall(), Icon(Icons.keyboard_arrow_right, color: Colors.grey[600])],
                     )
                   ],
                 ),
                 const Spacer(),
-                Text('Delivered', style: Theme.of(context).textTheme.subtitle2),
+                Text('Delivered', style: Theme.of(context).textTheme.titleSmall),
                 UIHelper.horizontalSpaceSmall(),
                 ClipOval(
                   child: Container(
                     padding: const EdgeInsets.all(2.2),
                     color: Colors.green,
-                    child: const Icon(Icons.check,
-                        color: Colors.white, size: 14.0),
+                    child: const Icon(Icons.check, color: Colors.white, size: 14.0),
                   ),
                 )
               ],
@@ -345,14 +308,11 @@ class _PastOrdersListItemView extends StatelessWidget {
                       children: <Widget>[
                         OutlinedButton(
                           style: OutlinedButton.styleFrom(
-                            side: BorderSide(width: 1.5, color: darkOrange!),
+                            side: const BorderSide(width: 1.5, color: darkOrange),
                           ),
                           child: Text(
                             'REORDER',
-                            style: Theme.of(context)
-                                .textTheme
-                                .subtitle2!
-                                .copyWith(color: darkOrange),
+                            style: Theme.of(context).textTheme.titleSmall!.copyWith(color: darkOrange),
                           ),
                           onPressed: () {},
                         ),
@@ -378,10 +338,7 @@ class _PastOrdersListItemView extends StatelessWidget {
                           ),
                           child: Text(
                             'RATE FOOD',
-                            style: Theme.of(context)
-                                .textTheme
-                                .subtitle2!
-                                .copyWith(color: Colors.black),
+                            style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.black),
                           ),
                           onPressed: () {},
                         ),

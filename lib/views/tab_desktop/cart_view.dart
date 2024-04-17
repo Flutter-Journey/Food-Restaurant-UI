@@ -4,7 +4,7 @@ import 'package:swiggy_ui/utils/app_colors.dart';
 import 'package:swiggy_ui/utils/ui_helper.dart';
 
 class CartView extends StatelessWidget {
-  const CartView({Key? key, this.isTab = false}) : super(key: key);
+  const CartView({super.key, this.isTab = false});
 
   final bool isTab;
 
@@ -74,12 +74,12 @@ class _UserHeader extends StatelessWidget {
                     children: [
                       Text(
                         'Vinoth',
-                        style: Theme.of(context).textTheme.headline6!.copyWith(fontSize: 17.0, fontWeight: FontWeight.bold),
+                        style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 17.0, fontWeight: FontWeight.bold),
                       ),
                       UIHelper.verticalSpaceExtraSmall(),
                       Text(
                         'User',
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(color: Colors.grey, fontSize: 13.0),
+                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: Colors.grey, fontSize: 13.0),
                       ),
                     ],
                   ),
@@ -109,9 +109,9 @@ class _MyOrdersList extends StatelessWidget {
           children: [
             Row(
               children: [
-                Text('Order Menu', style: Theme.of(context).textTheme.headline6),
+                Text('Order Menu', style: Theme.of(context).textTheme.titleLarge),
                 const Spacer(),
-                Text('See all', style: Theme.of(context).textTheme.subtitle1!.copyWith(color: swiggyOrange)),
+                Text('See all', style: Theme.of(context).textTheme.titleMedium!.copyWith(color: swiggyOrange)),
               ],
             ),
             UIHelper.verticalSpaceSmall(),
@@ -147,7 +147,7 @@ class _MyOrdersList extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(cartItems[index].title, style: Theme.of(context).textTheme.headline6!.copyWith(fontSize: 14.0)),
+                              Text(cartItems[index].title, style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 14.0)),
                               UIHelper.verticalSpaceMedium(),
                               Row(
                                 children: [
@@ -177,7 +177,7 @@ class _MyOrdersList extends StatelessWidget {
                         ),
                         Text(
                           'Rs ${cartItems[index].price}',
-                          style: Theme.of(context).textTheme.headline6!.copyWith(fontSize: 16.0, fontWeight: FontWeight.w800),
+                          style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 16.0, fontWeight: FontWeight.w800),
                         ),
                       ],
                     ),
@@ -195,11 +195,11 @@ class _MyOrdersList extends StatelessWidget {
 class _Checkout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final listTileStyle = Theme.of(context).textTheme.subtitle1!.copyWith(fontSize: 14.0, fontWeight: FontWeight.w600);
-    final amountStyle = Theme.of(context).textTheme.headline6!.copyWith(fontSize: 15.0, fontWeight: FontWeight.bold);
+    final listTileStyle = Theme.of(context).textTheme.titleMedium!.copyWith(fontSize: 14.0, fontWeight: FontWeight.w600);
+    final amountStyle = Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 15.0, fontWeight: FontWeight.bold);
 
     return Expanded(
-      flex: 3,
+      flex: 4,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -218,7 +218,7 @@ class _Checkout extends StatelessWidget {
             margin: const EdgeInsets.symmetric(vertical: 15.0),
             padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
             decoration: BoxDecoration(
-              border: Border.all(color: swiggyOrange!),
+              border: Border.all(color: swiggyOrange),
               color: Colors.deepOrange[50],
             ),
             child: Row(

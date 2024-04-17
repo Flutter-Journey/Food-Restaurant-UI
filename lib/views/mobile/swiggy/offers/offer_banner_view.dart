@@ -12,7 +12,7 @@ class OfferBannerView extends StatelessWidget {
     'assets/images/banner4.jpg',
   ];
 
-  OfferBannerView({Key? key}) : super(key: key);
+  OfferBannerView({super.key});
 
   @override
   Widget build(BuildContext context) {

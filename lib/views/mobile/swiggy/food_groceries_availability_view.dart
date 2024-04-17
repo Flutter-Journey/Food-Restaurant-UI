@@ -9,7 +9,7 @@ import 'genie/genie_grocery_card_view.dart';
 import 'meat/meat_screen.dart';
 
 class FoodGroceriesAvailabilityView extends StatelessWidget {
-  const FoodGroceriesAvailabilityView({Key? key}) : super(key: key);
+  const FoodGroceriesAvailabilityView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,13 +39,13 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         'We are now deliverying food groceries and other essentials.',
-                        style: Theme.of(context).textTheme.headline4,
+                        style: Theme.of(context).textTheme.headlineMedium,
                       ),
                       UIHelper.verticalSpaceSmall(),
                       Text(
                         'Food & Genie service (Mon-Sat)-6:00 am to 9:00pm. Groceries & Meat (Mon-Sat)-6:00 am to 6:00pm. Dairy (Mon-Sat)-6:00 am to 6:00pm (Sun)-6:00 am to 12:00 pm',
                         textAlign: TextAlign.center,
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                               fontSize: 16.0,
                               color: Colors.grey[800],
                             ),
@@ -90,7 +90,7 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
                                     'Restaurants',
                                     style: Theme.of(context)
                                         .textTheme
-                                        .headline4!
+                                        .headlineMedium!
                                         .copyWith(color: Colors.white),
                                   ),
                                   UIHelper.verticalSpaceExtraSmall(),
@@ -98,7 +98,7 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
                                     'No-contact delivery available',
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyLarge!
                                         .copyWith(color: Colors.white),
                                   )
                                 ],
@@ -117,7 +117,7 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
                                 'View all',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyLarge!
                                     .copyWith(
                                         color: Colors.white, fontSize: 18.0),
                               ),
