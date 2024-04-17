@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:swiggy_ui/views/tab_desktop/tab_screen.dart';
+import 'package:menu_ui/views/tab_desktop/tab_screen.dart';
 
 import 'shared/app_theme.dart';
 import 'views/tab_desktop/desktop_screen.dart';
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SwiggyUI',
+      title: 'Menu UI',
       debugShowCheckedModeBanner: false,
       theme: appPrimaryTheme(),
       home: const Responsive(

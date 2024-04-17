@@ -18,8 +18,8 @@ class PopularCategory {
         name: 'Veg only',
       ),
       PopularCategory(
-        image: 'assets/icons/only-on-swiggy.png',
-        name: 'Only on\nSwiggy',
+        image: 'assets/icons/only-on-menu.png',
+        name: 'Only on\nMenu',
       ),
       PopularCategory(
         image: 'assets/icons/offer.png',
@@ -42,8 +42,8 @@ class PopularCategory {
         name: 'Bread',
       ),
       PopularCategory(
-        image: 'assets/icons/only-on-swiggy.png',
-        name: 'Only on\nSwiggy',
+        image: 'assets/icons/only-on-menu.png',
+        name: 'Only on\nMenu',
       ),
       PopularCategory(
         image: 'assets/icons/food.png',

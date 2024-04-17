@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/models/tab_desktop/menu.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
+import 'package:menu_ui/models/tab_desktop/menu.dart';
+import 'package:menu_ui/utils/app_colors.dart';
+import 'package:menu_ui/utils/ui_helper.dart';
 
 class MenuView extends StatelessWidget {
   const MenuView({super.key, this.expandFlex = 2, this.isTab = false});
@@ -47,8 +47,8 @@ class MenuView extends StatelessWidget {
                         label: const Text('Logout'),
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          foregroundColor: swiggyOrange,
-                          side: const BorderSide(width: 2.0, color: swiggyOrange),
+                          foregroundColor: menuOrange,
+                          side: const BorderSide(width: 2.0, color: menuOrange),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(32.0),
                           ),
@@ -103,7 +103,7 @@ class __MenuItemState extends State<_MenuItem> {
           padding: isTab ? const EdgeInsets.symmetric(vertical: 10.0) : const EdgeInsets.only(left: 15.0, top: 10.0, right: 25.0, bottom: 10.0),
           child: isTab
               ? IconButton(
-                  icon: Icon(widget.menu.icon, color: isHovered ? swiggyOrange : Colors.black),
+                  icon: Icon(widget.menu.icon, color: isHovered ? menuOrange : Colors.black),
                   iconSize: 30.0,
                   onPressed: () {},
                 )
@@ -112,12 +112,12 @@ class __MenuItemState extends State<_MenuItem> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Icon(widget.menu.icon, color: isHovered ? swiggyOrange : Colors.black, size: 30.0),
+                    Icon(widget.menu.icon, color: isHovered ? menuOrange : Colors.black, size: 30.0),
                     UIHelper.horizontalSpaceMedium(),
                     Text(
                       widget.menu.title,
                       style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                            color: isHovered ? swiggyOrange : Colors.black,
+                            color: isHovered ? menuOrange : Colors.black,
                           ),
                     ),
                   ],

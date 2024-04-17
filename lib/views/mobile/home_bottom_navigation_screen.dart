@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/views/mobile/search/search_screen.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/swiggy_screen.dart';
+import 'package:menu_ui/views/mobile/search/search_screen.dart';
+import 'package:menu_ui/views/mobile/menu/menu_screen.dart';
 
 import '../../utils/app_colors.dart';
 import 'account/account_screen.dart';
@@ -15,7 +15,7 @@ class HomeBottomNavigationScreen extends StatefulWidget {
 
 class _HomeBottomNavigationScreenState extends State<HomeBottomNavigationScreen> {
   final List<Widget> _children = [
-    const SwiggyScreen(),
+    const MenuScreen(),
     const SearchScreen(),
     const CartScreen(),
     AccountScreen(),

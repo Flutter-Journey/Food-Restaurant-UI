@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
-import 'package:swiggy_ui/widgets/custom_divider_view.dart';
-import 'package:swiggy_ui/widgets/dotted_seperator_view.dart';
+import 'package:menu_ui/utils/app_colors.dart';
+import 'package:menu_ui/utils/ui_helper.dart';
+import 'package:menu_ui/widgets/custom_divider_view.dart';
+import 'package:menu_ui/widgets/dotted_seperator_view.dart';
 
 class AccountScreen extends StatelessWidget {
   final List<String> titles = [
     'My Account',
     'SUPER Expired',
-    'Swiggy Money',
+    'Menu Money',
     'Help',
   ];
   final List<String> body = [

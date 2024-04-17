@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/models/spotlight_best_top_food.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
-import 'package:swiggy_ui/widgets/custom_divider_view.dart';
-import 'package:swiggy_ui/widgets/mobile/search_food_list_item_view.dart';
+import 'package:menu_ui/models/spotlight_best_top_food.dart';
+import 'package:menu_ui/utils/app_colors.dart';
+import 'package:menu_ui/utils/ui_helper.dart';
+import 'package:menu_ui/widgets/custom_divider_view.dart';
+import 'package:menu_ui/widgets/mobile/search_food_list_item_view.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});

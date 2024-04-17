@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
+import 'package:menu_ui/utils/app_colors.dart';
 
 ThemeData appPrimaryTheme() => ThemeData(
       fontFamily: 'Poppins',

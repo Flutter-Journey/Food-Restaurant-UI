@@ -1,4 +1,4 @@
-import 'package:swiggy_ui/models/spotlight_best_top_food.dart';
+import 'package:menu_ui/models/spotlight_best_top_food.dart';
 
 import 'indian_food.dart';
 
@@ -26,8 +26,8 @@ class AllRestaurant {
         name: 'Pocket\nFriendly',
       ),
       AllRestaurant(
-        image: 'assets/icons/only-on-swiggy.png',
-        name: 'Only on\nSwiggy',
+        image: 'assets/icons/only-on-menu.png',
+        name: 'Only on\nMenu',
       ),
       AllRestaurant(
         image: 'assets/icons/thunder.png',

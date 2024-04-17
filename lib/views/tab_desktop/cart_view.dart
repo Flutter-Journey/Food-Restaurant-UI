@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/models/tab_desktop/order_menu.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
+import 'package:menu_ui/models/tab_desktop/order_menu.dart';
+import 'package:menu_ui/utils/app_colors.dart';
+import 'package:menu_ui/utils/ui_helper.dart';
 
 class CartView extends StatelessWidget {
   const CartView({super.key, this.isTab = false});
@@ -114,7 +114,7 @@ class _MyOrdersList extends StatelessWidget {
               children: [
                 Text('Order Menu', style: Theme.of(context).textTheme.titleLarge),
                 const Spacer(),
-                Text('See all', style: Theme.of(context).textTheme.titleMedium!.copyWith(color: swiggyOrange)),
+                Text('See all', style: Theme.of(context).textTheme.titleMedium!.copyWith(color: menuOrange)),
               ],
             ),
             UIHelper.verticalSpaceSmall(),
@@ -221,7 +221,7 @@ class _Checkout extends StatelessWidget {
             margin: const EdgeInsets.symmetric(vertical: 15.0),
             padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
             decoration: BoxDecoration(
-              border: Border.all(color: swiggyOrange),
+              border: Border.all(color: menuOrange),
               color: Colors.deepOrange[50],
             ),
             child: Row(
@@ -236,7 +236,7 @@ class _Checkout extends StatelessWidget {
                     label: const Text('Add Coupon'),
                     style: ElevatedButton.styleFrom(
                       foregroundColor: Colors.white,
-                      backgroundColor: swiggyOrange,
+                      backgroundColor: menuOrange,
                       elevation: 0.0,
                     ),
                   ),
@@ -260,7 +260,7 @@ class _Checkout extends StatelessWidget {
               label: const Text('Checkout'),
               style: ElevatedButton.styleFrom(
                 foregroundColor: Colors.white,
-                backgroundColor: swiggyOrange,
+                backgroundColor: menuOrange,
               ),
             ),
           )

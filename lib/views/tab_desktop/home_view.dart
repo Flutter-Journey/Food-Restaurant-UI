@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/models/spotlight_best_top_food.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/best_in_safety_view.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/food_groceries_availability_view.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/in_the_spotlight_view.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/offers/offer_banner_view.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/popular_brand_view.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/popular_categories_view.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/restaurants/restaurant_vertical_list_view.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/swiggy_safety_banner_view.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/swiggy_screen.dart';
-import 'package:swiggy_ui/views/mobile/swiggy/top_offer_view.dart';
-import 'package:swiggy_ui/widgets/custom_divider_view.dart';
+import 'package:menu_ui/models/spotlight_best_top_food.dart';
+import 'package:menu_ui/utils/ui_helper.dart';
+import 'package:menu_ui/views/mobile/menu/best_in_safety_view.dart';
+import 'package:menu_ui/views/mobile/menu/food_groceries_availability_view.dart';
+import 'package:menu_ui/views/mobile/menu/in_the_spotlight_view.dart';
+import 'package:menu_ui/views/mobile/menu/offers/offer_banner_view.dart';
+import 'package:menu_ui/views/mobile/menu/popular_brand_view.dart';
+import 'package:menu_ui/views/mobile/menu/popular_categories_view.dart';
+import 'package:menu_ui/views/mobile/menu/restaurants/restaurant_vertical_list_view.dart';
+import 'package:menu_ui/views/mobile/menu/menu_safety_banner_view.dart';
+import 'package:menu_ui/views/mobile/menu/menu_screen.dart';
+import 'package:menu_ui/views/mobile/menu/top_offer_view.dart';
+import 'package:menu_ui/widgets/custom_divider_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key, this.expandFlex = 4});
@@ -52,7 +52,7 @@ class _Body extends StatelessWidget {
             const CustomDividerView(),
             PopularCategoriesView(),
             const CustomDividerView(),
-            const SwiggySafetyBannerView(),
+            const MenuSafetyBannerView(),
             BestInSafetyViews(),
             const CustomDividerView(),
             TopOffersViews(),
