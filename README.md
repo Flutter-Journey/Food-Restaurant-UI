@@ -8,7 +8,7 @@ projects.
 ![GitHub stars](https://img.shields.io/github/stars/chunhthanhde/Food-Restaurant-UI?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/chunhthanhde/Food-Restaurant-UI?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/chunhthanhde/Food-Restaurant-UI?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/chunhthanhde?label=Follow&style=social)
+![LinkedIn Follow](https://img.shields.io/LinkedIn/follow/chunhthanhde?label=Follow&style=social)
 
 <a href="https://www.buymeacoffee.com/chunhthanhde" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
