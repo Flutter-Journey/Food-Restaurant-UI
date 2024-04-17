@@ -21,14 +21,14 @@ class MenuSafetyBannerView extends StatelessWidget {
             children: <Widget>[
               const Icon(
                 Icons.arrow_downward,
-                color: menuOrange,
+                color: menuGreen,
               ),
               UIHelper.horizontalSpaceExtraSmall(),
               Flexible(
                 child: Text(
                   "SWIGGY's KEY MEASURES TO ENSURE SAFETY",
                   style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                        color: menuOrange,
+                        color: menuGreen,
                         fontSize: 15.0,
                         fontWeight: FontWeight.w700,
                       ),
@@ -37,7 +37,7 @@ class MenuSafetyBannerView extends StatelessWidget {
               UIHelper.horizontalSpaceExtraSmall(),
               const Icon(
                 Icons.arrow_downward,
-                color: menuOrange,
+                color: menuGreen,
               ),
             ],
           ),
@@ -54,7 +54,7 @@ class MenuSafetyBannerView extends StatelessWidget {
                 width: cardWidth,
                 decoration: BoxDecoration(
                   color: Colors.orange[100],
-                  border: Border.all(color: menuOrange, width: 2.0),
+                  border: Border.all(color: menuGreen, width: 2.0),
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Row(
@@ -90,7 +90,7 @@ class MenuSafetyBannerView extends StatelessWidget {
                               style: Theme.of(context)
                                   .textTheme
                                   .titleLarge!
-                                  .copyWith(color: darkOrange),
+                                  .copyWith(color: darkGreen),
                             ),
                             onPressed: () {},
                           )

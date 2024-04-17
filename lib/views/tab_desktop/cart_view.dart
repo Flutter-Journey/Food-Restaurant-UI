@@ -114,7 +114,7 @@ class _MyOrdersList extends StatelessWidget {
               children: [
                 Text('Order Menu', style: Theme.of(context).textTheme.titleLarge),
                 const Spacer(),
-                Text('See all', style: Theme.of(context).textTheme.titleMedium!.copyWith(color: menuOrange)),
+                Text('See all', style: Theme.of(context).textTheme.titleMedium!.copyWith(color: menuGreen)),
               ],
             ),
             UIHelper.verticalSpaceSmall(),
@@ -221,7 +221,7 @@ class _Checkout extends StatelessWidget {
             margin: const EdgeInsets.symmetric(vertical: 15.0),
             padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
             decoration: BoxDecoration(
-              border: Border.all(color: menuOrange),
+              border: Border.all(color: menuGreen),
               color: Colors.deepOrange[50],
             ),
             child: Row(
@@ -236,7 +236,7 @@ class _Checkout extends StatelessWidget {
                     label: const Text('Add Coupon'),
                     style: ElevatedButton.styleFrom(
                       foregroundColor: Colors.white,
-                      backgroundColor: menuOrange,
+                      backgroundColor: menuGreen,
                       elevation: 0.0,
                     ),
                   ),
@@ -260,7 +260,7 @@ class _Checkout extends StatelessWidget {
               label: const Text('Checkout'),
               style: ElevatedButton.styleFrom(
                 foregroundColor: Colors.white,
-                backgroundColor: menuOrange,
+                backgroundColor: menuGreen,
               ),
             ),
           )

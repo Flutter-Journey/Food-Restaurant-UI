@@ -326,7 +326,7 @@ class _AddressPaymentView extends StatelessWidget {
               InkWell(
                 child: Text(
                   'ADD ADDRESS',
-                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: darkOrange),
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: darkGreen),
                 ),
                 onTap: () {},
               ),

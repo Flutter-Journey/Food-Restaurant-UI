@@ -167,7 +167,7 @@ class _CardView extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         color: Colors.orange[100],
-        border: Border.all(color: menuOrange, width: 2.0),
+        border: Border.all(color: menuGreen, width: 2.0),
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Row(
@@ -202,7 +202,7 @@ class _CardView extends StatelessWidget {
                     style: Theme.of(context)
                         .textTheme
                         .titleLarge!
-                        .copyWith(color: darkOrange),
+                        .copyWith(color: darkGreen),
                   ),
                   onPressed: () {},
                 )

@@ -33,7 +33,7 @@ class _HomeBottomNavigationScreenState extends State<HomeBottomNavigationScreen>
         height: 50.0,
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: darkOrange,
+          selectedItemColor: darkGreen,
           unselectedItemColor: Colors.grey,
           currentIndex: selectedIndex,
           selectedLabelStyle: labelTextStyle,

@@ -73,11 +73,11 @@ class _SearchScreenState extends State<SearchScreen>
                 unselectedLabelColor: Colors.grey,
                 labelColor: Colors.black,
                 controller: _tabController,
-                indicatorColor: darkOrange,
+                indicatorColor: darkGreen,
                 labelStyle: Theme.of(context)
                     .textTheme
                     .titleSmall!
-                    .copyWith(fontSize: 18.0, color: darkOrange),
+                    .copyWith(fontSize: 18.0, color: darkGreen),
                 unselectedLabelStyle:
                     Theme.of(context).textTheme.titleSmall!.copyWith(
                           fontSize: 18.0,

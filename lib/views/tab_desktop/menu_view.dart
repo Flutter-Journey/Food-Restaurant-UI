@@ -47,8 +47,8 @@ class MenuView extends StatelessWidget {
                         label: const Text('Logout'),
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          foregroundColor: menuOrange,
-                          side: const BorderSide(width: 2.0, color: menuOrange),
+                          foregroundColor: menuGreen,
+                          side: const BorderSide(width: 2.0, color: menuGreen),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(32.0),
                           ),
@@ -103,7 +103,7 @@ class __MenuItemState extends State<_MenuItem> {
           padding: isTab ? const EdgeInsets.symmetric(vertical: 10.0) : const EdgeInsets.only(left: 15.0, top: 10.0, right: 25.0, bottom: 10.0),
           child: isTab
               ? IconButton(
-                  icon: Icon(widget.menu.icon, color: isHovered ? menuOrange : Colors.black),
+                  icon: Icon(widget.menu.icon, color: isHovered ? menuGreen : Colors.black),
                   iconSize: 30.0,
                   onPressed: () {},
                 )
@@ -112,12 +112,12 @@ class __MenuItemState extends State<_MenuItem> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Icon(widget.menu.icon, color: isHovered ? menuOrange : Colors.black, size: 30.0),
+                    Icon(widget.menu.icon, color: isHovered ? menuGreen : Colors.black, size: 30.0),
                     UIHelper.horizontalSpaceMedium(),
                     Text(
                       widget.menu.title,
                       style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                            color: isHovered ? menuOrange : Colors.black,
+                            color: isHovered ? menuGreen : Colors.black,
                           ),
                     ),
                   ],

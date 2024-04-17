@@ -77,7 +77,7 @@ class _AppBar extends StatelessWidget {
               InkWell(
                 child: Text(
                   'EDIT',
-                  style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 17.0, color: darkOrange),
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 17.0, color: darkGreen),
                 ),
                 onTap: () {},
               )
@@ -198,7 +198,7 @@ class _PastOrderListView extends StatelessWidget {
         TextButton(
           child: Text(
             'VIEW MORE ORDERS',
-            style: Theme.of(context).textTheme.titleSmall!.copyWith(color: darkOrange),
+            style: Theme.of(context).textTheme.titleSmall!.copyWith(color: darkGreen),
           ),
           onPressed: () {},
         ),
@@ -308,11 +308,11 @@ class _PastOrdersListItemView extends StatelessWidget {
                       children: <Widget>[
                         OutlinedButton(
                           style: OutlinedButton.styleFrom(
-                            side: const BorderSide(width: 1.5, color: darkOrange),
+                            side: const BorderSide(width: 1.5, color: darkGreen),
                           ),
                           child: Text(
                             'REORDER',
-                            style: Theme.of(context).textTheme.titleSmall!.copyWith(color: darkOrange),
+                            style: Theme.of(context).textTheme.titleSmall!.copyWith(color: darkGreen),
                           ),
                           onPressed: () {},
                         ),

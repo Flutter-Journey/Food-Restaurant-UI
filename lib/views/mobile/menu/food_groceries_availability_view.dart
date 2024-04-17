@@ -30,7 +30,7 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
                   child: Container(
                     width: 10.0,
                     height: 140.0,
-                    color: menuOrange,
+                    color: menuGreen,
                   ),
                 ),
                 UIHelper.horizontalSpaceMedium(),
@@ -73,7 +73,7 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
                         },
                   child: Container(
                     height: 170.0,
-                    color: menuOrange,
+                    color: menuGreen,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
@@ -110,7 +110,7 @@ class FoodGroceriesAvailabilityView extends StatelessWidget {
                         Container(
                           height: 45.0,
                           padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                          color: darkOrange,
+                          color: darkGreen,
                           child: Row(
                             children: <Widget>[
                               Text(
