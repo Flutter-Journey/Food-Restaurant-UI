@@ -39,4 +39,4 @@ Mobile - [Download APK](https://github.com/ChunhThanhDe/Food-Restaurant-UI/relea
 
 ### *🌟 To see more visit the folder [Screenshots](https://github.com/ChunhThanhDe/Food-Restaurant-UI/tree/main/screenshots)*
 
-### Made With Flutter 💙 and Big thanks 🙌 template from [Vinoth Vinohttps](https://github.com/vinothvino42/SwiggyUI)
+### Made With Flutter 💙 and Big thanks 🙌 template from [Vinoth Vinohttps](https://github.com/vinothvino42/)
