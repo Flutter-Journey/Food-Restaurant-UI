@@ -6,9 +6,9 @@ A beautifully designed **Food Restaurant UI** app, which is a clone of a famous 
 
 <img src="assets/images/restaurant.png" height="100px" alt="Restaurant UI Logo"/>
 
-![GitHub stars](https://img.shields.io/github/stars/chunhthanhde/Food-Restaurant-UI?style=social)
-![GitHub forks](https://img.shields.io/github/forks/chunhthanhde/Food-Restaurant-UI?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/chunhthanhde/Food-Restaurant-UI?style=social)
+![GitHub stars](https://img.shields.io/github/stars/Flutter-Journey/Food-Restaurant-UI?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Flutter-Journey/Food-Restaurant-UI?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/Flutter-Journey/Food-Restaurant-UI?style=social)
 
 <a href="https://www.linkedin.com/in/chunhthanhde/">
 <img src="https://img.shields.io/badge/Support-Recommend%2FEndorse%20me%20on%20Linkedin-blue?style=for-the-badge&logo=linkedin" alt="Support me on LinkedIn" />
@@ -49,22 +49,20 @@ A beautifully designed **Food Restaurant UI** app, which is a clone of a famous 
 
 <img src="screenshots/menu_mobile_ui.jpg" alt="Menu Mobile UI" style="width: 300px;">
 
-For more screenshots, visit the folder [Screenshots](https://github.com/ChunhThanhDe/Food-Restaurant-UI/tree/main/screenshots).
+For more screenshots, visit the folder [Screenshots](https://github.com/Flutter-Journey/Food-Restaurant-UI/tree/main/screenshots).
 
 
-## 🌟 Conclusion
+## 🧰 Release
 
-If you're looking for a clean, modern food ordering app UI built in Flutter, then this project is for you! Download the APK below to explore the app on your mobile device.
+📱 **Mobile**: [Download APK](https://github.com/Flutter-Journey/Food-Restaurant-UI/releases/download/v0.0.1/app-release.apk)
 
-📱 **Mobile**: [Download APK](https://github.com/ChunhThanhDe/Food-Restaurant-UI/releases/download/v0.0.1/app-release.apk)
+## 🌟 Star History
 
-## Star History
-
-<a href="https://star-history.com/#chunhthanhde/Food-Restaurant-UI&Date">
+<a href="https://star-history.com/#Flutter-Journey/Food-Restaurant-UI&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=chunhthanhde/Food-Restaurant-UI&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=chunhthanhde/Food-Restaurant-UI&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=chunhthanhde/Food-Restaurant-UI&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Flutter-Journey/Food-Restaurant-UI&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Flutter-Journey/Food-Restaurant-UI&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Flutter-Journey/Food-Restaurant-UI&type=Date" />
  </picture>
 </a>
 
