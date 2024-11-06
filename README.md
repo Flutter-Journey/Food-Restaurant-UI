@@ -66,3 +66,10 @@ For more screenshots, visit the folder [Screenshots](https://github.com/Flutter-
  </picture>
 </a>
 
+<div align="center">
+
+#### Made by Flutter <img src="https://raw.githubusercontent.com/Flutter-Journey/.github/refs/heads/main/media/flutter_icon.png" height="15"> with Love ❤️ | Developed by [ChunhThanhDe](https://github.com/chunhthanhde)
+
+</div>
+
+
